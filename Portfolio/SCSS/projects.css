@@ -1,0 +1,322 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ *{
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+
+
+body {
+    background: rgb(45,162,66);
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(90deg, rgb(161, 201, 168) 0%, rgb(108, 163, 153) 35%, rgb(131, 222, 240) 100%);
+    background-size: cover;  
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+.box-1 {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 25px;
+    flex-basis: 70%;
+    color: white;
+    text-align: center;
+}
+
+*/
+
+@keyframes hoverfade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(192, 235, 232);
+  border-radius: 8px;
+}
+  
+/*
+div, img, nav {
+    border: 3px solid darkblue;
+}
+*/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1%;
+    
+}
+
+.navbar-brand {
+    width: 10%;
+    text-align: center;
+    margin: auto;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.5rem;
+
+}
+
+.navbar-image {
+    margin: 0% 10%;
+    width: 4%;
+
+}
+
+.box-1 {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 3.5rem;
+    line-height: 5.5rem;
+    flex-basis: 70%;
+    color: white;
+    text-align: center;
+    margin: 8% 10% 3%;
+}
+
+.button {
+    width: 27%;
+    margin: 0% auto 9%;
+    font-size: 2rem;
+    padding: 2%;
+    font-family: 'Didact Gothic', sans-serif;
+    border: 2px solid white;
+    border-radius: 40px;
+    text-align: center;   
+}
+
+.button:hover {
+    font-size: 2.1rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(181, 236, 222);
+}
+
+a:visited:hover {
+    color: rgb(181, 236, 222);
+}
+
+a:visited {
+    color: white;
+}
+
+#hideMe {
+    -webkit-animation: cssAnimation 5s forwards; 
+    animation: cssAnimation 5s forwards;
+}
+@keyframes cssAnimation {
+    0%   {opacity: 1;}
+    75%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-webkit-keyframes cssAnimation {
+    0%   {opacity: 1;}
+    75%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes cssAnimationReverse {
+    0%   {opacity: 0;}
+    25%  {opacity: 1;}
+    100% {opacity: 1;}
+}
+@-webkit-keyframes cssAnimationReverse {
+    0%   {opacity: 0;}
+    25%  {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+
+
+#hideMe:hover {
+    opacity: 1;
+    -webkit-animation: cssAnimationReverse 5s forwards; 
+    animation: cssAnimationReverse 2s forwards;
+}
+
+
+
+
+/*body {
+  margin: 0;
+  font-family: 'Roboto';
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+*/
+.carousel {
+  padding: 20%;
+  -webkit-perspective: 500px;
+          perspective: 500px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.carousel figure {
+  margin: 0;
+  width: 90rem;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform-origin: 50% 50% -482.84271px;
+          transform-origin: 50% 50% -482.84271px;
+}
+
+.carousel figure img {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 27%;
+  opacity: 0.9;
+}
+
+.carousel figure img:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform-origin: 50% 50% -482.84271px;
+          transform-origin: 50% 50% -482.84271px;
+}
+
+.carousel figure img:nth-child(2) {
+  -webkit-transform: rotateY(0.7854rad);
+          transform: rotateY(0.7854rad);
+}
+
+.carousel figure img:nth-child(3) {
+  -webkit-transform: rotateY(1.5708rad);
+          transform: rotateY(1.5708rad);
+}
+
+.carousel figure img:nth-child(4) {
+  -webkit-transform: rotateY(2.35619rad);
+          transform: rotateY(2.35619rad);
+}
+
+.carousel figure img:nth-child(5) {
+  -webkit-transform: rotateY(3.14159rad);
+          transform: rotateY(3.14159rad);
+}
+
+.carousel figure img:nth-child(6) {
+  -webkit-transform: rotateY(3.92699rad);
+          transform: rotateY(3.92699rad);
+}
+
+.carousel figure img:nth-child(7) {
+  -webkit-transform: rotateY(4.71239rad);
+          transform: rotateY(4.71239rad);
+}
+
+.carousel figure img:nth-child(8) {
+  -webkit-transform: rotateY(5.49779rad);
+          transform: rotateY(5.49779rad);
+}
+
+.carousel nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0 0;
+  background: none;
+}
+
+.carousel nav button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #333;
+  background: none;
+  border: 1px solid;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
+/*# sourceMappingURL=projects.css.map */

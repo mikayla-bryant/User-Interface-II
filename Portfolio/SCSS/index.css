@@ -1,0 +1,199 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ *{
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+
+
+body {
+    background: rgb(45,162,66);
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(90deg, rgba(45,162,66,1) 0%, rgba(9,121,101,1) 35%, rgba(0,212,255,1) 100%);
+    background-size: cover;  
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+.box-1 {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 25px;
+    flex-basis: 70%;
+    color: white;
+    text-align: center;
+}
+
+*/
+
+@keyframes hoverfade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(192, 235, 232);
+  border-radius: 8px;
+}
+  
+/*
+div, img, nav {
+    border: 3px solid darkblue;
+}
+*/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1%;
+    
+}
+
+.navbar-brand {
+    width: 10%;
+    text-align: center;
+    margin: auto;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.5rem;
+
+}
+
+.navbar-image {
+    margin: 0% 10%;
+    width: 4%;
+
+}
+
+.box-1 {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 3.5rem;
+    line-height: 5.5rem;
+    flex-basis: 70%;
+    color: white;
+    text-align: center;
+    margin: 8% 10% 3%;
+}
+
+.button {
+    width: 27%;
+    margin: 0% auto 9%;
+    font-size: 2rem;
+    padding: 2%;
+    font-family: 'Didact Gothic', sans-serif;
+    border: 2px solid white;
+    border-radius: 40px;
+    text-align: center;   
+}
+
+.button:hover {
+    font-size: 2.1rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(181, 236, 222);
+}
+
+a:visited:hover {
+    color: rgb(181, 236, 222);
+}
+
+a:visited {
+    color: white;
+}
+
+#hideMe {
+    -webkit-animation: cssAnimation 5s forwards; 
+    animation: cssAnimation 5s forwards;
+}
+@keyframes cssAnimation {
+    0%   {opacity: 1;}
+    75%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-webkit-keyframes cssAnimation {
+    0%   {opacity: 1;}
+    75%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes cssAnimationReverse {
+    0%   {opacity: 0;}
+    25%  {opacity: 1;}
+    100% {opacity: 1;}
+}
+@-webkit-keyframes cssAnimationReverse {
+    0%   {opacity: 0;}
+    25%  {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+
+
+#hideMe:hover {
+    opacity: 1;
+    -webkit-animation: cssAnimationReverse 5s forwards; 
+    animation: cssAnimationReverse 2s forwards;
+}
+
+
+p {
+    color: white;
+    font-family: 'Didact Gothic', sans-serif;
+    width: 50%;
+    margin: 10% 5%;
+    font-size: 1.5rem;
+}
